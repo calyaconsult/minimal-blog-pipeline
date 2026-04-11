@@ -1,0 +1,244 @@
+:root {
+  --bg: #f7f5f0;
+  --surface: #fcfbf8;
+  --surface-2: #f1eee8;
+  --text: #1e1d1a;
+  --muted: #666257;
+  --border: #ddd7cc;
+  --accent: #0f5c63;
+  --accent-hover: #0a464b;
+  --max: 1180px;
+  --reading: 68ch;
+  --shadow: 0 10px 30px rgba(23, 20, 12, 0.06);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--accent); }
+p, li { max-width: 72ch; }
+img { max-width: 100%; display: block; }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--surface);
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+}
+
+.wrap {
+  width: min(calc(100% - 2rem), var(--max));
+  margin: 0 auto;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.home-main {
+  padding: 3rem 0 5rem;
+}
+
+.hero {
+  margin-bottom: 3rem;
+}
+
+.section-label,
+.eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.hero-post,
+.post-card,
+.sidebar-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.hero-post {
+  padding: 2rem;
+}
+
+.hero-post h1,
+.article-column h1,
+.post-card h3 {
+  font-family: "Source Serif 4", serif;
+  line-height: 1.08;
+  margin: 0.4rem 0 0.75rem;
+}
+
+.hero-post h1 {
+  font-size: clamp(2.2rem, 4vw, 4.4rem);
+  max-width: 12ch;
+}
+
+.hero-summary,
+.article-summary {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.section-heading {
+  font-family: "Source Serif 4", serif;
+  font-size: 1.6rem;
+  margin: 0 0 1rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.post-card {
+  padding: 1.4rem;
+}
+
+.post-card h3 {
+  font-size: 1.6rem;
+}
+
+.text-list {
+  margin-top: 2.75rem;
+}
+
+.text-list ul,
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.text-list li,
+.sidebar-links li {
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.text-list li span,
+.sidebar-links li span {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.article-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 3rem;
+  padding: 3rem 0 5rem;
+}
+
+.article-column {
+  min-width: 0;
+}
+
+.article-column > * {
+  max-width: var(--reading);
+}
+
+.article-body {
+  font-family: "Source Serif 4", serif;
+  font-size: 1.18rem;
+}
+
+.article-body h2,
+.article-body h3 {
+  line-height: 1.15;
+  margin-top: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.article-body p,
+.article-body ul,
+.article-body ol {
+  margin: 0 0 1.1rem;
+}
+
+.article-body a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
+
+.sidebar-column {
+  align-self: start;
+  position: sticky;
+  top: 5.5rem;
+}
+
+.sidebar-box {
+  padding: 1.25rem;
+}
+
+.sidebar-box h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-family: "Source Serif 4", serif;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 900px) {
+  .article-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .sidebar-column {
+    position: static;
+  }
+}
+
+@media (max-width: 720px) {
+  body { font-size: 16px; }
+  .card-grid { grid-template-columns: 1fr; }
+  .hero-post,
+  .post-card,
+  .sidebar-box { padding: 1.1rem; }
+  .hero-post h1 { max-width: none; }
+}

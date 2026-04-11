@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Field Notes]]></title>
+        <description><![CDATA[A static blog generated from one Markdown file.]]></description>
+        <link>https://example.com</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sat, 11 Apr 2026 09:33:45 GMT</lastBuildDate>
+        <atom:link href="https://example.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
+        <language><![CDATA[en]]></language>
+        <managingEditor><![CDATA[Your Name]]></managingEditor>
+        <webMaster><![CDATA[Your Name]]></webMaster>
+        <ttl>60</ttl>
+        <item>
+            <title><![CDATA[Building a resilient writing system]]></title>
+            <description><![CDATA[A simple workflow for publishing without a CMS.]]></description>
+            <link>https://example.com/posts/building-a-resilient-writing-system/</link>
+            <guid isPermaLink="false">https://example.com/posts/building-a-resilient-writing-system/</guid>
+            <dc:creator><![CDATA[Your Name]]></dc:creator>
+            <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Why single-file publishing can work]]></title>
+            <description><![CDATA[Using one markdown file for many posts without losing structure.]]></description>
+            <link>https://example.com/posts/why-single-file-publishing-can-work/</link>
+            <guid isPermaLink="false">https://example.com/posts/why-single-file-publishing-can-work/</guid>
+            <dc:creator><![CDATA[Your Name]]></dc:creator>
+            <pubDate>Sun, 05 Apr 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[A calm homepage layout for recent posts]]></title>
+            <description><![CDATA[How to arrange the latest nine posts with clear hierarchy.]]></description>
+            <link>https://example.com/posts/a-calm-homepage-layout-for-recent-posts/</link>
+            <guid isPermaLink="false">https://example.com/posts/a-calm-homepage-layout-for-recent-posts/</guid>
+            <dc:creator><![CDATA[Your Name]]></dc:creator>
+            <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Text-first article pages]]></title>
+            <description><![CDATA[A two-column reading layout with a quiet sidebar.]]></description>
+            <link>https://example.com/posts/text-first-article-pages/</link>
+            <guid isPermaLink="false">https://example.com/posts/text-first-article-pages/</guid>
+            <dc:creator><![CDATA[Your Name]]></dc:creator>
+            <pubDate>Sat, 28 Mar 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Generating RSS without a platform]]></title>
+            <description><![CDATA[How a static build can produce a standard RSS 2.0 feed.]]></description>
+            <link>https://example.com/posts/generating-rss-without-a-platform/</link>
+            <guid isPermaLink="false">https://example.com/posts/generating-rss-without-a-platform/</guid>
+            <dc:creator><![CDATA[Your Name]]></dc:creator>
+            <pubDate>Tue, 24 Mar 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Why markdown remains enough]]></title>
+            <description><![CDATA[Markdown keeps the writing flow portable and durable.]]></description>
+            <link>https://example.com/posts/why-markdown-remains-enough/</link>
+            <guid isPermaLink="false">https://example.com/posts/why-markdown-remains-enough/</guid>
+            <dc:creator><![CDATA[Your Name]]></dc:creator>
+            <pubDate>Thu, 19 Mar 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Automating rebuilds after edits]]></title>
+            <description><![CDATA[Watch mode keeps generated HTML in sync with content edits.]]></description>
+            <link>https://example.com/posts/automating-rebuilds-after-edits/</link>
+            <guid isPermaLink="false">https://example.com/posts/automating-rebuilds-after-edits/</guid>
+            <dc:creator><![CDATA[Your Name]]></dc:creator>
+            <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Templates without framework overhead]]></title>
+            <description><![CDATA[Using template literals to keep a tiny static site generator readable.]]></description>
+            <link>https://example.com/posts/templates-without-framework-overhead/</link>
+            <guid isPermaLink="false">https://example.com/posts/templates-without-framework-overhead/</guid>
+            <dc:creator><![CDATA[Your Name]]></dc:creator>
+            <pubDate>Tue, 10 Mar 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Designing for readability first]]></title>
+            <description><![CDATA[A blog should privilege reading over decoration.]]></description>
+            <link>https://example.com/posts/designing-for-readability-first/</link>
+            <guid isPermaLink="false">https://example.com/posts/designing-for-readability-first/</guid>
+            <dc:creator><![CDATA[Your Name]]></dc:creator>
+            <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
