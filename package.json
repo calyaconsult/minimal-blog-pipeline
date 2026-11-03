@@ -1,0 +1,14 @@
+{
+  "name": "minimal-blog-pipeline",
+  "version": "1.0.0",
+  "description": "A minimal, zero-framework static blog pipeline built with Node.js.",
+  "type": "module",
+  "scripts": {
+    "build": "node src/build.js"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.0",
+    "rss": "^1.2.2"
+  }
+}
